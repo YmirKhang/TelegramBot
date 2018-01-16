@@ -4,7 +4,7 @@ const TelegramBaseController = Telegram.TelegramBaseController
 
 class OtherWiseController extends Telegram.TelegramBaseController {
   handle($) {
-    $.sendMessage('Can\/t resolve the command!')
+    $.sendMessage('Can\'t resolve the command!')
   }
 }
 
