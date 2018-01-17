@@ -8,7 +8,8 @@ const storage = new MemoryStorage(`${__dirname}/data/userStorage.json`,`${__dirn
 const apikey = require('./data/apikey.json');
 const tg = new Telegram.Telegram(apikey['key'], {
   workers: 1,
-  storage: storage
+  storage: storage,
+  webAdmin: { port:3001, host: '0.0.0.0'}
 });
 const ToDoController = require('./Controllers/todo'), OtherWiseController = require('./Controllers/otherwise');
 
